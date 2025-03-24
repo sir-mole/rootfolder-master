@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="indexstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo"> <a href="index.html" class="logo"><img src="images/logo.png" alt="MUDA's logo" class="logo"></a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <div class="contact-button">
+            <a href="#">Contact</a>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="intro-content">
+            <h1>Hi, I'm Mudasir Ayuba <br><span>'A Computer Engineer'</span></h1>
+            <p>"Passionate Computer Engineer focusing on full-satck development, UI/UX Designs, PCB Designs and system optimization. 
+                Available for discussions on impactful projects and roles - reach out!".</p>
+                <div class="social-links">
+                    <ul>
+                        <li><a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#" class="social-icon"><i class="fab fa-github"></i></a></li>
+                        <li><a href="#" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" class="social-icon"><i class="fab fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+                
+            <div class="intro-buttons">
+                <a href="services.html" class="primary-button">Hire Me</a>
+                <a href="#" class="secondary-button">Download CV</a>
+            </div>
+        </div>
+        <div class="intro-image">
+            <img src="images/mo.png" alt="Mudasir Ayuba">
+        </div>
+    </section>
+
+    <section class="experiences">
+        <h2>Expertise & Experience</h2>
+        <div class="experience-grid">
+            <div class="experience-item">
+                <div class="icon"><i class="fas fa-laptop-code"></i></div>
+                <h3>Projects and Design</h3>
+                <p>Explore my showcase of notable projects, in-depth case studies, and UI/UX design portfolio, highlighting my expertise in crafting innovative solutions.</p>
+                <a href="#" class="read-more">Learn More</a>
+            </div>
+            <div class="experience-item">
+                <div class="icon"><i class="fas fa-user-tie"></i></div>
+                <h3>Professional Experience</h3>
+                <p>Discover my technical background and industry experience, spanning full-stack development, PCB Design, UI/UX Design and Teaching.</p>
+                <a href="#" class="read-more">Learn More</a>
+            </div>
+            <div class="experience-item">
+                <div class="icon"><i class="fas fa-tools"></i></div>
+                <h3>Skills and Expertise</h3>
+                <p>Learn about my technical skills, soft skills and certificates, demonstarting my versatility and commitment to staying up-to-date in each field.</p>
+                <a href="#" class="read-more">Learn More</a>
+            </div>
+        </div>
+        <div class="cta-button">
+            <a href="#">Hear more from my clients <i class="fa fa-users" aria-hidden="true"></i>   </a>
+        </div>
+    </section>
+
+    <section class="call-to-action">
+        <div class="cta-content">
+            <h2>Ready to Elevate Your Digital Presence?</h2>
+            <p>Let's discuss your project and explore how our expertise can help you achieve your goals.</p>
+            <a href="#" class="primary-button">Get in Touch</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="theme-toggle">
+            <div class="light-icon">&#x2600;</div>
+            <div class="slider">
+                <div class="indicator"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggle = document.querySelector('.theme-toggle');
+        const body = document.body;
+        const indicator = document.querySelector('.indicator');
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            indicator.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>

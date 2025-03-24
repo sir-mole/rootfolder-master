@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Services</title>
+    <link rel="stylesheet" href="servicesstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="logo"> <a href="index.html" class="logo"><img src="images/logo.png" alt="MUDA's logo" class="logo"></a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <div class="contact-button">
+            <a href="#">Contact</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="tagline">WHAT I OFFER</div>
+            <h1>Professional Services</h1>
+            <p>Dedicated to delivering high-quality solutions tailored to your specific needs, with a focus on clean code, responsive design, and exceptional user experience.</p>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="service-card">
+            <div class="icon">&lt; &gt;</div>
+            <h3>Web Development</h3>
+            <p>Custom websites built with modern technologies, responsive designs, and seamless user experiences.</p>
+        </div>
+        <div class="service-card">
+            <div class="icon">&#x1F5B3;</div>
+            <h3>UI / UX Design</h3>
+            <p>Intuitive interfaces that balance aesthetics and functionality to create memorable digital experiences.</p>
+        </div>
+        <div class="service-card">
+            <div class="icon">&#x1F4B0;</div>
+            <h3>Backend Systems</h3>
+            <p>Robust server architectures, APIs, and database solutions to power your applications efficiently.</p>
+        </div>
+        <div class="service-card">
+            <div class="icon">&#x1F50E;</div>
+            <h3>Technical Consulting</h3>
+            <p>Strategic guidance on technology choices, architecture planning, and implementation roadmaps.</p>
+        </div>
+        <div class="service-card">
+            <div class="icon">&#x1F4C3;</div>
+            <h3>Database Management</h3>
+            <p>Design, implementation, and optimization of database systems for performance and reliability.</p>
+        </div>
+        <div class="service-card">
+            <div class="icon">&#x1F468;&#x200D;&#x1F4BB;</div>
+            <h3>Technical Tutoring</h3>
+            <p>Personalized programming and computer science education for individuals and small groups.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="theme-toggle">
+            <div class="light-icon">&#x2600;</div>
+            <div class="slider">
+                <div class="indicator"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggle = document.querySelector('.theme-toggle');
+        const body = document.body;
+        const indicator = document.querySelector('.indicator');
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            indicator.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
