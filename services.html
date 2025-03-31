@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Services</title>
+    <link rel="stylesheet" href="indexstyle.css">
     <link rel="stylesheet" href="servicesstyle.css">
+    <link rel="stylesheet" href="aboutstyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -14,14 +16,14 @@
         <div class="logo"> <a href="index.html" class="logo"><img src="images/logo.png" alt="MUDA's logo" class="logo"></a></div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="services.html" class="active">Services</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="index.html" ><span><i class="fas fa-home"></i></span><p>Home</p></a></li>
+                <li><a href="#"><span><i class="fas fa-folder"></i></span><p>Projects</p></a></li>
+                <li><a href="services.html" class="active"><span><i class="fas fa-laptop"></i></span><p>Services</p></a></li>
+                <li><a href="about.html"><span><i class="fas fa-id-card"></i></span><p>About</p></a></li>
             </ul>
         </nav>
         <div class="contact-button">
-            <a href="#">Contact</a>
+            <a href="#"><span><i class="fas fa-phone"></i></span><p>Contact</p></a>
         </div>
     </header>
 
@@ -40,27 +42,27 @@
             <p>Custom websites built with modern technologies, responsive designs, and seamless user experiences.</p>
         </div>
         <div class="service-card">
-            <div class="icon">&#x1F5B3;</div>
+            <div class="icon"><i class="fas fa-paint-brush"></i></div>
             <h3>UI / UX Design</h3>
             <p>Intuitive interfaces that balance aesthetics and functionality to create memorable digital experiences.</p>
         </div>
         <div class="service-card">
-            <div class="icon">&#x1F4B0;</div>
+            <div class="icon"><i class="fas fa-server"></i></div>
             <h3>Backend Systems</h3>
             <p>Robust server architectures, APIs, and database solutions to power your applications efficiently.</p>
         </div>
         <div class="service-card">
-            <div class="icon">&#x1F50E;</div>
-            <h3>Technical Consulting</h3>
-            <p>Strategic guidance on technology choices, architecture planning, and implementation roadmaps.</p>
-        </div>
+            <div class="icon"><i class="fas fa-microchip"></i></div>
+            <h3>PCB Design</h3>
+            <p>Expertise in schematic capture, component selection, layout optimization, and manufacturing file generation for reliable printed circuit boards.</p>
+            </div>
         <div class="service-card">
-            <div class="icon">&#x1F4C3;</div>
+            <div class="icon"><i class="fas fa-database"></i></div>
             <h3>Database Management</h3>
             <p>Design, implementation, and optimization of database systems for performance and reliability.</p>
         </div>
         <div class="service-card">
-            <div class="icon">&#x1F468;&#x200D;&#x1F4BB;</div>
+            <div class="icon"><i class="fas fa-robot"></i></div>
             <h3>Technical Tutoring</h3>
             <p>Personalized programming and computer science education for individuals and small groups.</p>
         </div>
@@ -68,22 +70,24 @@
 
     <footer>
         <div class="theme-toggle">
-            <div class="light-icon">&#x2600;</div>
+            <div class="light-icon"><i class="fas fa-sun"></i></div>
             <div class="slider">
                 <div class="indicator"></div>
             </div>
+            <div class="dark-icon"><i class="fas fa-moon"></i></div>
+        </div>
+        <div class="social-links">
+            <ul>
+                <li><a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#" class="social-icon"><i class="fab fa-github"></i></a></li>
+                <li><a href="#" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" class="social-icon"><i class="fab fa-facebook"></i></a></li>
+            </ul>
         </div>
     </footer>
 
-    <script>
-        const themeToggle = document.querySelector('.theme-toggle');
-        const body = document.body;
-        const indicator = document.querySelector('.indicator');
+    <script src="script.js"></script>
 
-        themeToggle.addEventListener('click', () => {
-            body.classList.toggle('dark-theme');
-            indicator.classList.toggle('dark-mode');
-        });
-    </script>
 </body>
 </html>
