@@ -87,44 +87,6 @@ document.addEventListener('DOMContentLoaded', function() {
         commentPopup.appendChild(closeCommentBtn);
     }
 
-    // GitHub links functionality
-    const githubLinks = document.querySelectorAll('.github-link');
-    
-    githubLinks.forEach((link) => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const iframe = document.createElement('iframe');
-            iframe.src = link.href;
-            iframe.frameBorder = '0';
-            
-            const popup = document.createElement('div');
-            popup.classList.add('popup');
-            
-            const closeButton = document.createElement('button');
-            closeButton.innerHTML = '×';
-            closeButton.classList.add('popup-close');
-            
-            closeButton.addEventListener('click', () => {
-                document.body.removeChild(popup);
-            });
-            
-            popup.addEventListener('click', (e) => {
-                if (e.target === popup) {
-                    document.body.removeChild(popup);
-                }
-            });
-            
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && popup.parentNode) {
-                    document.body.removeChild(popup);
-                }
-            });
-            
-            popup.appendChild(closeButton);
-            popup.appendChild(iframe);
-            document.body.appendChild(popup);
-        });
-    }); // Add closing bracket here
 
     // GitHub Calendar initialization
     if (typeof GitHubCalendar !== 'undefined') {

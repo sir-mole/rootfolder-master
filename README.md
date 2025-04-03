@@ -24,9 +24,9 @@ A modern and responsive portfolio website built with HTML, CSS, and JavaScript t
 - Interactive navigation menu
 
 ## Technologies Used
-- HTML5
-- CSS3
-- JavaScript (ES6+)
+- HTML
+- CSS
+- JavaScript
 
 
 ## Project Structure
@@ -47,7 +47,6 @@ A modern and responsive portfolio website built with HTML, CSS, and JavaScript t
 ## Performance Optimization
 - Minified CSS and JavaScript files
 - Optimized images
-- Lazy loading for images
 - Caching enabled
 
 
