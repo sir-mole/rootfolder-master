@@ -1,0 +1,102 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="indexstyle.css">
+    <link rel="stylesheet" href="servicesstyle.css">
+    <link rel="stylesheet" href="aboutstyle.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html" class="logo"><img src="images/logo.png" alt="MUDA's logo" class="logo"></a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><span><i class="fas fa-home"></i></span><p>Home</p></a></li>
+                <li><a href="projects.html"><span><i class="fas fa-folder"></i></span><p>Projects</p></a></li>
+                <li><a href="services.html"><span><i class="fas fa-laptop"></i></span><p>Services</p></a></li>
+                <li><a href="about.html" ><span><i class="fas fa-id-card"></i></span><p>About</p></a></li>
+            </ul>
+        </nav>
+        <div class="contact-button">
+            <a href="contact.html"><span><i class="fas fa-phone"></i></span><p>Contact</p></a>
+        </div>
+    </header>
+    
+    <div class="contact-container">
+        <h2>Contact <span class="highlight">Me</span></h2>
+        
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Contact Options -->
+        <div id="Contact-Options" class="contact-options">
+            <div class="contact-option whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                <a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank">
+                    Chat on WhatsApp
+                </a>
+            </div>
+
+            <div class="contact-option telegram">
+                <i class="fab fa-telegram-plane"></i>
+                <a href="YOUR_TELEGRAM_LINK">
+                    Chat on Telegram
+                </a>
+            </div>
+
+            <div class="contact-option phone">
+                <i class="fas fa-phone"></i>
+                <a href="#">
+                    Call me 
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="theme-toggle">
+            <div class="light-icon"><i class="fas fa-sun"></i></div>
+            <div class="slider">
+                <div class="indicator"></div>
+            </div>
+            <div class="dark-icon"><i class="fas fa-moon"></i></div>
+        </div>
+        <div class="social-links">
+            <ul>
+                <li><a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#" class="social-icon"><i class="fab fa-github"></i></a></li>
+                <li><a href="#" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" class="social-icon"><i class="fab fa-facebook"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

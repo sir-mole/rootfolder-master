@@ -1,0 +1,200 @@
+/* Header and Navigation styles should be in your main CSS file */
+
+/* Main container styling */
+.contact-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding:80px 20px;
+}
+
+.contact-container h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.contact-container .highlight {
+    color: #f39c12;
+}
+
+/* Contact Form Section */
+.contact-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+#contact-form {
+    display: grid;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    border: 2px solid #e7e6e6;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #f39c12;
+}
+
+.submit-btn {
+    background: #f39c12;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.submit-btn:hover {
+    background: #e67e22;
+    transform: translateY(-2px);
+}
+
+/* Contact Options Section */
+.contact-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.contact-option {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.contact-option:hover {
+    transform: translateY(-5px);
+}
+
+.contact-option i {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.contact-option.whatsapp i {
+    color: #25D366;
+    background: rgba(37, 211, 102, 0.1);
+}
+
+.contact-option.whatsapp:hover i {
+    background: rgba(37, 211, 102, 0.2);
+}
+
+.contact-option.telegram i {
+    color: #0088cc;
+    background: rgba(0, 136, 204, 0.1);
+}
+
+.contact-option.telegram:hover i {
+    background: rgba(0, 136, 204, 0.2);
+}
+
+.contact-option.phone i {
+    color: #e67e22;
+    background: rgb(146, 77, 16, 0.1);
+}
+
+.contact-option.phone:hover i {
+    background: rgb(146, 77, 16, 0.3);
+}
+
+.contact-option a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    .contact-container h2 {
+        font-size: 2em;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-options {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Dark Theme */
+.dark-theme .contact-container h2 {
+    color: #fff;
+}
+
+.dark-theme .contact-form,
+.dark-theme .contact-option {
+    background: #2c3e50;
+}
+
+.dark-theme .form-group label {
+    color: #fff;
+}
+
+.dark-theme .form-group input,
+.dark-theme .form-group textarea {
+    background: #34495e;
+    border-color: #4a6278;
+    color: #fff;
+}
+
+.dark-theme .contact-option a {
+    color: #fff;
+}
+
+.dark-theme .submit-btn {
+    background: #f39c12;
+}
+
+.dark-theme .submit-btn:hover {
+    background: #e67e22;
+}

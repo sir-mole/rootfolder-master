@@ -1,19 +1,28 @@
-.about-hero {
+.about-intro {
     padding: 80px 20px 0px;
     text-align: center;
     background-color: var(--background-color);
 }
 
-.about-hero h1 {
+.about-intro h1 {
     font-size: 3em;
     margin-bottom: 20px;
-    color: var(--text-color);
+    color: #2c3e50;
+}
+
+.dark-theme .about-intro h1 {
+    color: #f39c12;
 }
 
 .lead-text {
     font-size: 1.5em;
-    color: var(--secondary-text-color);
+    color: #2c3e50;
 }
+
+.dark-theme .lead-text {
+    color: #eee;
+}
+
 
 .about-details {
     padding: 0px 20px;
@@ -59,7 +68,7 @@
 }
 
 .professional-summary h2 {
-    color: var(--text-color);
+    color: #2c3e50;
     margin-bottom: 15px;
     font-size: 1.5em;
 }
@@ -70,8 +79,12 @@
 }
 
 .professional-summary p {
-    color: var(--secondary-text-color);
+    color: #2c3e50;
     line-height: 1.6;
+}
+
+.dark-theme .professional-summary p {
+    color: #eee;
 }
 
 
@@ -93,7 +106,7 @@
 }
 
 .contact-section h2 {
-    color: var(--text-color);
+    color: #2c3e50;
     font-size: 1.2em;
     margin-bottom: 10px;
 }
@@ -101,6 +114,7 @@
 .dark-theme .contact-section h2 {
     color: #f39c12;
 }
+
 
 .contact-info {
     display: flex;
@@ -112,18 +126,26 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    color: var(--secondary-text-color);
+    color: #2c3e50;
 }
 
 .contact-item i {
-    color: var(--primary-color);
+    color: #2c3e50;
     font-size: 1em;
     width: 20px;
     text-align: center;
 }
 
+.dark-theme .contact-item i {
+    color: #bbb;
+}
+
 .contact-item p {
     margin: 0;
+}
+
+.dark-theme .contact-item p {
+    color: #bbb;
 }
 
 /* Social Links in Contact Section */
@@ -134,13 +156,22 @@
 }
 
 .social-links-professional a {
-    color: var(--secondary-text-color);
+    color: #555;
     font-size: 1.3em;
     transition: color 0.3s ease;
 }
 
+.dark-theme .social-links-professional a {
+    color: #eee;
+    
+}
+
 .social-links-professional a:hover {
-    color: var(--primary-color);
+    color: #2c3e50;
+}
+
+.dark-theme .social-links-professional a:hover {
+    color: #f39c12;
 }
 
 /* Resume Download Button */
@@ -152,21 +183,22 @@
 
 .download-button {
     display: inline-flex;
-    align-items: center;
+    align-items: left;
     gap: 10px;
     padding: 10px 20px;
-    background: var(--primary-color);
-    color: #333333;
+    color: #2c3e50;
     border-radius: 8px;
     text-decoration: none;
     transition: all 0.3s ease;
+    background-color: #eee;
 }
 
 .dark-theme .download-button {
-    color: #eee;
+    background-color: #34495e;
+    color: #f39c12;
 }
 .download-button:hover {
-    background: var(--primary-color-dark);
+    color: #283847;
     transform: translateY(-2px);
 }
 
@@ -186,7 +218,7 @@
 .skills-section h2 {
     text-align: center;
     margin-bottom: 30px;
-    color: var(--text-color);
+    color: #2c3e50;
     font-size: 2em;
 }
 
@@ -227,7 +259,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    color: var(--text-color);
+    color: #2c3e50;
     margin-bottom: 10px;
     font-size: 1.4em;
 }
@@ -237,7 +269,6 @@
 }
 
 .skill-category h3 i {
-    color: var(--primary-color);
     font-size: 1.2em;
 }
 
@@ -251,10 +282,15 @@
 }
 
 .skill-category ul li {
-    color: var(--secondary-text-color);
+    color: #555;
     padding-left: 20px;
     position: relative;
     line-height: 1.6;
+}
+
+.dark-theme .skill-category ul li {
+    color: #bbb;
+    
 }
 
 .skill-category ul li::before {
@@ -383,15 +419,34 @@
     overflow-x: auto;
     overflow-y: hidden;
     padding: 20px;
-    /* Hide scrollbar but keep functionality */
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
+    scroll-snap-type: x mandatory; /* Smooth snap scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
 
-/* Hide webkit scrollbar but keep functionality */
 .education-cert-grid::-webkit-scrollbar {
-    display: none;
+    height: 8px;
 }
+
+.education-cert-grid::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 4px;
+}
+
+.education-cert-grid::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 4px;
+}
+
+.dark-theme .education-cert-grid::-webkit-scrollbar-track {
+    background: #bbb;
+    border-radius: 4px;
+}
+
+.dark-theme .education-cert-grid::-webkit-scrollbar-thumb {
+    background: #2c3e50;
+    border-radius: 4px;
+}
+
 
 .dark-theme .education-cert-grid {
     background-color: #1e1e1e;
@@ -501,8 +556,8 @@
 
 .cert-item h3{
     text-align: center;
-    margin-bottom: 5px;
-    margin-top: 0;
+    margin-bottom: 0;
+    margin-top: 5px;
     color: #2c3e50;
     font-size: 1em;
 }
@@ -512,8 +567,9 @@
 }
 
 .cert-item p{
+    padding: 0 ;
     text-align: center;
-    margin-top: 0;
+    margin: 0;
     color: #555;
     font-size: 0.8em;
     /* Ensure text doesn't overflow */
@@ -545,14 +601,10 @@
    color: #eee;
 }
 
-.github-activity {
-    padding: 40px 20px;
-    background: var(--card-background);
-    margin: 40px 0;
-}
+
 /* Projects CTA Section */
 .projects-cta {
-    margin: 60px 100px;
+    margin: 10px 100px 60px;
     padding: 40px 20px;
     background: #f8f9fa;  /* Light theme background color */
     border-radius: 15px;
@@ -647,12 +699,12 @@
 }
 
 @media (max-width: 768px) {
-    /* Hero section adjustments */
-    .about-hero {
+    /* intro section adjustments */
+    .about-intro {
         padding: 40px 20px;  /* Added consistent padding */
     }
     
-    .about-hero h1 {
+    .about-intro h1 {
         font-size: 2em;  /* Reduced font size for better mobile display */
     }
 
