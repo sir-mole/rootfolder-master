@@ -10,7 +10,7 @@ A modern and responsive portfolio website built with HTML, CSS, and JavaScript t
 - [Quick Start](#quick-start)
 - [Browser Support](#browser-support)
 - [Development](#development)
-ted 
+ 
 
 ## Features
 - Responsive design that works on desktop and mobile devices
