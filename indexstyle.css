@@ -76,10 +76,11 @@ nav ul li a.active {
 
 .contact-button{
     padding-right: 20px;
+    margin: 10px 0;
 }
 
 .contact-button a span{
-    font-size: 1.8em;
+    font-size: 1.5em;
     display: none;
 }
 .contact-button a {
@@ -657,8 +658,8 @@ footer .social-links a {
     .contact-button a span{
         background-color: #f39c12;
         color: #fff;
-        padding: 10px 20px;
-        border-radius: 5px 0 5px 5px;
+        padding: 8px 15px;
+        border-radius: 20px 0 20px 20px;
         text-decoration: none;
         transition: background-color 0.3s ease;
     }
@@ -672,6 +673,7 @@ footer .social-links a {
     }
 
     .intro {
+        
         padding-top: 0;
         margin-top: 0;
         flex-direction: column;
