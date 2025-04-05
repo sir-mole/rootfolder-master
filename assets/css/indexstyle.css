@@ -103,7 +103,7 @@ nav ul li a.active {
 
 .intro {
     /*background-color: #34495e;*/
-    background-image: url(images/intro.jpg);
+    background-image: url(../images/intro.jpg);
     background-size: cover; /* Scale the image to cover the entire header */
     background-position: center center; /* Center the image within the header */
     background-repeat: no-repeat; /* Prevent the image from tiling */

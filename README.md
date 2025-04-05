@@ -30,6 +30,22 @@ A modern and responsive portfolio website built with HTML, CSS, and JavaScript t
 
 
 ## Project Structure
+rootfolder/
+├── assets/
+│   ├── images/
+│   │   └── (images)
+│   ├── docs/     
+│   │   └── (documents)
+│   ├── css/
+│   │   └── (stylesheets)
+│   └── js (script,js)
+│   └── projects
+├── pages/
+│   └── (additional HTML pages)
+├── index.html
+├── NOTICE.md
+└── README.md
+
 
 
 ## Quick Start
