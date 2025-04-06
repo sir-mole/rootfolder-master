@@ -44,7 +44,9 @@ rootfolder/
 │   └── (additional HTML pages)
 ├── index.html
 ├── NOTICE.md
+└── personal portfolio website-figma.png
 └── README.md
+└── WEBSITE DESIGN PROPOSAL.docx
 
 
 
