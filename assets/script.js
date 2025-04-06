@@ -89,20 +89,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     // GitHub Calendar initialization
-    if (typeof GitHubCalendar !== 'undefined') {
-        GitHubCalendar(".calendar", "sir-mole", {
-            responsive: true,
-            tooltips: true,
-            global_stats: false, // This hides the total contributions count
-            summary_text: '',    // This removes the summary text
-        }).then(function(response) {
-            console.log("Calendar loaded successfully");
-        }).catch(function(error) {
-            console.error("Error loading calendar:", error);
-        });
-    } else {
-        console.error("GitHubCalendar library is not loaded");
-    }
+    GitHubCalendar(".calendar", "sir-mole", {
+        responsive: true,
+        tooltips: true,
+        global_stats: false,
+        summary_text: ''
+    });
 
 
     // contact.js
