@@ -89,12 +89,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     // GitHub Calendar initialization
-    GitHubCalendar(".calendar", "sir-mole", {
-        responsive: true,
-        tooltips: true,
-        global_stats: false,
-        summary_text: ''
+    const calendarDiv = document.querySelector('.calendar');
+    const username = 'sir-mole';
+
+    fetch(`https://api.github.com/users/${username}`)
+    .then(response => response.json())
+    .then(data => {
+        const contributionsUrl = data.contributions_url;
+        fetch(contributionsUrl)
+        .then(response => response.json())
+        .then(contributionsData => {
+            const calendarHtml = contributionsData.contributions.map(contribution => {
+            return `
+                <div class="day" data-level="${contribution.level}">
+                <span class="date">${contribution.date}</span>
+                <span class="count">${contribution.count}</span>
+                </div>
+            `;
+            }).join('');
+            calendarDiv.innerHTML = calendarHtml;
+        });
     });
+
 
 
     // contact.js
