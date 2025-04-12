@@ -129,10 +129,25 @@
             </div>
             <!-- Add more software project cards -->
         </div>
-        <div class="github-section">
-            <h3>GitHub Activity</h3>
-            <iframe class="calendar" src="https://ghchart.rshah.org/sir-mole" frameborder="0" ></iframe>
-        </div>
+        <!-- GitHub Calendar Section -->
+        <section class="github-section">
+            <h2>GitHub Contributions</h2>
+            <div class="calendar-container">
+                <div class="calendar"></div>
+                <div class="calendar-legend">
+                    <span>Less</span>
+                    <ul class="legend">
+                        <li data-level="0"></li>
+                        <li data-level="1"></li>
+                        <li data-level="2"></li>
+                        <li data-level="3"></li>
+                        <li data-level="4"></li>
+                    </ul>
+                    <span>More</span>
+                </div>
+            </div>
+        </section>
+        
     </section>
 
     <!-- Hardware Projects Section -->
@@ -371,13 +386,11 @@
     </section>
 
     <footer>
-        <div class="theme-toggle">
-            <div class="light-icon"><i class="fas fa-sun"></i></div>
-            <div class="slider">
-                <div class="indicator"></div>
-            </div>
-            <div class="dark-icon"><i class="fas fa-moon"></i></div>
-        </div>
+        <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+            <i class="fas fa-sun sun-icon"></i>
+            <i class="fas fa-moon moon-icon"></i>
+        </button>
+
         <div class="social-links">
             <ul>
                 <li><a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a></li>
