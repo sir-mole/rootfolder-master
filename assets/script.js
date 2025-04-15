@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         downloadLink.addEventListener('click', (e) => {
             e.preventDefault();
             const iframe = document.createElement('iframe');
-            iframe.src = 'https://drive.google.com/file/d/1BYjHM1E0P5rbrv2cVpMXgoFc-G_aNHnZ/preview&embedded=true';
+            iframe.src = '../assets/docs/Curriculum Vitae Ing Mudasir Ayuba.pdf';
             iframe.frameBorder = '0';
             
             const popup = document.createElement('div');
